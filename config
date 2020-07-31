@@ -1,0 +1,20 @@
+apVersion: v1
+kind: Config 
+
+clusters:
+- cluster:
+    certificate-authority: /root/DevOps_Task_4/ca.crt
+    server: https://192.168.99.102:8443
+  name: abhi
+
+contexts:
+- context:
+    cluster: mycluster
+    user: arpit
+
+users:
+- name: arpit
+  user:
+    client-certificate: /root/DevOps_Task_4/client.crt
+    client-ket: /root/DevOps_Task_4/client.key
+ 
