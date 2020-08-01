@@ -15,6 +15,6 @@ contexts:
 users:
 - name: arpit
   user:
-    client-certificate: /root/DevOps_Task_4/client.crt
-    client-ket: /root/DevOps_Task_4/client.key
+    client-certificate: /devops/client.crt
+    client-ket: /devops/client.key
  
