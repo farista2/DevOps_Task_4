@@ -20,5 +20,4 @@ RUN yum install httpd -y
 RUN yum install php -y
 COPY /devops/*.html  /var/www/html/
 CMD /usr/sbin/httpd -DFOREGROUND && /bin/bash
-COPY /devops/index.html /var/www/html/
 Expose 80
