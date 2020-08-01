@@ -6,10 +6,10 @@ COPY kubectl.repo  /etc/yum.repos.d
 RUN yum install kubectl -y
 RUN yum install java -y
 RUN yum install git -y
-COPY /root/ca.crt  /root/
-COPY /root/client.crt /root/
-COPY /root/client.key /root/
-COPY /root/config /root/.kube/
+COPY ca.crt  /root/
+COPY client.crt /root/
+COPY client.key /root/
+COPY config /root/.kube/
 RUN ssh-keygen  -A
 CMD  ["/usr/sbin/sshd",  "-D"]  &&  /bin/bash
 CMD setenforce 0
