@@ -5,7 +5,7 @@ clusters:
 - cluster:
     certificate-authority: /root/DevOps_Task_4/ca.crt
     server: https://192.168.99.102:8443
-  name: abhi
+  name: arpit
 
 contexts:
 - context:
